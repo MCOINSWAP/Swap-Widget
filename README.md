@@ -9,7 +9,12 @@ This guide explains how to easily embed the Mcoins Swap Widget on your website.
 ### Step 1: Copy the iframe Code
 
 ```bash
-<iframe src="https://app.mcoins.xyz/swap-widget" width="300" height="500" style="border: none;"></iframe>
+<iframe 
+  src="https://app.mcoins.xyz/swap-widget" 
+  width="300" 
+  height="500" 
+  style="border-radius: 15px;">
+</iframe>
 
 ```
 ### Step 2: Paste the Code into Your Website
