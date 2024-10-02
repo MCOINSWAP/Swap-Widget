@@ -11,8 +11,8 @@ The first step involves copying the iFrame code snippet provided below:
 
 ```html
 <iframe 
-    src="https://app.mcoins.xyz/swap-widget?token0=0x55d398326f99059fF775485246999027B3197955&token1=TOKEN1_ADDRESS&chainid=CHAIN_ID" 
-    width="300" 
+    src="https://app.mcoins.xyz/swap-widget?token0=0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56&token1=TOKEN1_ADDRESS&chainid=CHAIN_ID" 
+    width="400" 
     height="500" 
     style="border-radius: 15px;">
 </iframe>
