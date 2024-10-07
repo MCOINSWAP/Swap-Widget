@@ -23,6 +23,7 @@ The first step involves copying the iFrame code snippet provided below:
 - Set `CHAIN_ID` to the appropriate blockchain identifier:
   - Use `56` for BSC (Binance Smart Chain).
   - Use `137` for Polygon.
+  - Use `8453` for Base Chain (ETH)
 
 ## Step 2: Embed the Code into Your Website
 
