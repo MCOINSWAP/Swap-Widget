@@ -24,6 +24,7 @@ The first step involves copying the iFrame code snippet provided below:
   - Use `56` for BSC (Binance Smart Chain).
   - Use `137` for Polygon.
   - Use `8453` for Base Chain (ETH)
+  - Use 369 For Pulsechain
 
 ## Step 2: Embed the Code into Your Website
 
