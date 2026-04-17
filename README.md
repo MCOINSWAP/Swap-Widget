@@ -1,38 +1,83 @@
+# Mcoins Swap Widget — Embed Guide
 
-# Mcoins Swap Widget Integration Guide
+This guide walks you through embedding the Mcoins Swap Widget into your website in a few simple steps.
 
-## Introduction
+---
 
-This guide provides a step-by-step process to seamlessly embed the Mcoins Swap Widget into your website. By following the instructions below, you can offer a smooth swap experience for your users.
+## How to Use
 
-## Step 1: Copy the iFrame Code
+### Step 1 — Choose your default network
 
-The first step involves copying the iFrame code snippet provided below:
+Select the blockchain network by setting the `chain` parameter in the embed URL:
+
+| Network | `chain` value |
+|---|---|
+| BSC (Binance Smart Chain) | `56` |
+| Polygon | `137` |
+| Base Chain (ETH) | `8453` |
+| Pulsechain | `369` |
+
+---
+
+### Step 2 — Lock tokens *(optional)*
+
+You can pre-lock one or both tokens by adding `lockA` and/or `lockB` to the URL. Each value can be either a token symbol (e.g. `BNB`) or a contract address (e.g. `0x291FdaF5E4a0D6c27E84A3242E4dD2c0720b9c99`).
+
+Leave these parameters out to let users choose their own tokens freely.
+
+---
+
+### Step 3 — Check the live preview
+
+Before publishing, open your page in a browser and confirm the widget renders correctly. You can also use browser DevTools to inspect the iframe.
+
+---
+
+### Step 4 — Copy the embed code and paste it into your website's HTML
+
+Place the following `<iframe>` snippet wherever you want the widget to appear:
 
 ```html
-<iframe 
-    src="https://app.mcoins.xyz/swap-widget?token0=0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56&token1=TOKEN1_ADDRESS&chainid=CHAIN_ID" 
-    width="400" 
-    height="500" 
-    style="border-radius: 15px;">
-</iframe>
+<iframe
+  src="https://www.mcoins.xyz/widget?chain=56&lockA=BNB&lockB=0x291FdaF5E4a0D6c27E84A3242E4dD2c0720b9c99&theme=dark"
+  width="480"
+  height="550"
+  style="border:none; border-radius:16px; box-shadow:0 4px 32px rgba(0,0,0,0.12);"
+  title="McoinSwap Widget"
+  allow="clipboard-write"
+></iframe>
 ```
 
-### Important:
-- Replace `TOKEN1_ADDRESS` with the contract address of your desired token.
-- Set `CHAIN_ID` to the appropriate blockchain identifier:
-  - Use `56` for BSC (Binance Smart Chain).
-  - Use `137` for Polygon.
-  - Use `8453` for Base Chain (ETH)
-  - Use `369` for Pulsechain
+### URL parameters
 
-## Step 2: Embed the Code into Your Website
+| Parameter | Required | Description | Example |
+|---|---|---|---|
+| `chain` | Yes | Blockchain network ID | `56` |
+| `lockA` | No | Token A symbol or contract address | `BNB` |
+| `lockB` | No | Token B symbol or contract address | `0x291Fda...` |
+| `theme` | No | Widget color theme (`dark` or `light`) | `dark` |
 
-Once you have customized the iFrame code with your token address and chain ID, paste it into the HTML of your website at the desired location. The swap widget will automatically appear, offering a user-friendly interface for token swapping.
+---
 
-## Conclusion
+## Example URLs
 
-By following these steps, you have successfully integrated the Mcoins Swap Widget into your website. We are continuously working on enhancing our features, including the ability to select token pairs and lock tokens directly within the swap widget.
+**BSC, both tokens locked, dark theme:**
+```
+https://www.mcoins.xyz/widget?chain=56&lockA=BNB&lockB=0x291FdaF5E4a0D6c27E84A3242E4dD2c0720b9c69&theme=dark
+```
 
-If you require further assistance, please do not hesitate to contact our support team.
+**Polygon, no tokens locked, light theme:**
+```
+https://www.mcoins.xyz/widget?chain=137&theme=light
+```
 
+**Base Chain, Token A locked only:**
+```
+https://www.mcoins.xyz/widget?chain=8453&lockA=ETH&theme=dark
+```
+
+---
+
+## Support
+
+If you need further assistance, please contact our support team.
