@@ -1,5 +1,7 @@
 # Mcoins Swap Widget — Embed Guide
 
+![Mcoins Swap Widget](https://raw.githubusercontent.com/MCOINSWAP/Swap-Widget/main/screen.png)
+
 This guide walks you through embedding the Mcoins Swap Widget into your website in a few simple steps.
 
 ---
